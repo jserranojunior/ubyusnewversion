@@ -1,0 +1,23 @@
+version: "3"
+
+networks:
+  stack_ponte:
+    external: true
+
+services:
+  frontend_ubyus_prod:
+    container_name: "frontend_ubyus_prod"
+    image: "webdevops/apache:latest"
+    restart: always
+    working_dir: /app
+    volumes:
+      - ${PATHCLIENTES}/ubyusnewversion/frontend/dist:/app
+    networks:
+      - stack_ponte
+    ports:
+      - "186:80"
+    labels:
+      - "traefik.enable=true"
+      - traefik.http.routers.ubyus.rule=Host(`ubyus.${DOMAIN}`)
+      - traefik.http.services.ubyus.loadbalancer.server.port=80
+      - "traefik.http.routers.ubyus.tls.certresolver=le"
