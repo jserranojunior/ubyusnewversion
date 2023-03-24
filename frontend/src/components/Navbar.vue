@@ -1,15 +1,6 @@
 <template>
-  <div class="flex">
-    <div class="w-full px-6" mx-auto>
-      <img
-        src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
-        width="80"
-        alt=""
-        class="mx-auto my-4"
-      />
-    </div>
-  </div>
-  <div class="navbar bg-base-100">
+  <LogoArea></LogoArea>
+  <div class="navbar border-b border-t border-base-content">
     <div class="navbar-start w-auto">
       <div class="dropdown text-center mx-auto">
         <label
@@ -50,7 +41,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>
+<script setup lang="ts">
+  import LogoArea from "./LogoArea.vue";
+</script>

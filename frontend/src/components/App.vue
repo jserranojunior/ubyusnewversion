@@ -17,10 +17,10 @@
 
 <template>
   <div>
-    <div class="bg-base-200">
-      <div class="content px-0 md:px-0 lg:px-0 2xl:px-24 bg-white">
+    <div class="bg-base-100">
+      <div class="content px-0 md:px-0 lg:px-0 2xl:px-24">
         <Navbar></Navbar>
-        <Home></Home>
+        <router-view />
         <Footer></Footer>
         <BtnToTop></BtnToTop>
       </div>
