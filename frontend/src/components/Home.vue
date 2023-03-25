@@ -21,9 +21,9 @@
         <div class="w-full">Nossa Atuação</div>
       </div>
       <div class="flex gap-2 my-4 justify-center mx-8">
-        <div class="w-1/3" v-for="count in [1, 2, 3]">
+        <div class="w-1/3">
           <div class="card card-side bg-base-100 shadow-xl">
-            <router-link to="nossafuncao">
+            <router-link to="fusoeseaquisicoes">
               <div class="flex">
                 <img
                   src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
@@ -33,7 +33,46 @@
                   class="w-1/3"
                 />
                 <div class="card-body">
-                  <p>Fusões e Aquisições</p>
+                  <p>
+                    Fusões e<br />
+                    Aquisições
+                  </p>
+                </div>
+              </div>
+            </router-link>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="card card-side bg-base-100 shadow-xl">
+            <router-link to="estruturacao">
+              <div class="flex">
+                <img
+                  src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
+                  alt="Movie"
+                  width="150px"
+                  height="150px"
+                  class="w-1/3"
+                />
+                <div class="card-body">
+                  <p>Estruturação e Estratégia de Negócios</p>
+                </div>
+              </div>
+            </router-link>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="card card-side bg-base-100 shadow-xl">
+            <router-link to="fusoeseaquisicoes">
+              <div class="flex">
+                <img
+                  src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
+                  alt="Movie"
+                  width="150px"
+                  height="150px"
+                  class="w-1/3"
+                />
+                <div class="card-body">
+                  <p>Sucessão e Governança Familiar</p>
                 </div>
               </div>
             </router-link>
@@ -41,7 +80,7 @@
         </div>
       </div>
       <div class="flex gap-2 justify-center py-8">
-        <div class="w-1/3" v-for="count in [1, 2]">
+        <div class="w-1/3">
           <div class="card card-side bg-base-100 shadow-xl">
             <img
               src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
@@ -52,7 +91,22 @@
             />
 
             <div class="card-body">
-              <p>Fusões e Aquisições</p>
+              <p>Gestão de <br />Pessoas</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="card card-side bg-base-100 shadow-xl">
+            <img
+              src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
+              alt="Movie"
+              width="150px"
+              height="150px"
+              class="w-1/3"
+            />
+
+            <div class="card-body">
+              <p>Soluções em Serviços Financeiros e Consórcio</p>
             </div>
           </div>
         </div>

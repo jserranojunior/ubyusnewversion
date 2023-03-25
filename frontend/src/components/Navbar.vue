@@ -1,6 +1,6 @@
 <template>
   <LogoArea></LogoArea>
-  <div class="navbar border-b border-t border-base-content">
+  <div class="navbar border-b border-base-content">
     <div class="navbar-start w-auto">
       <div class="dropdown text-center mx-auto">
         <label
@@ -34,6 +34,8 @@
     </div>
     <div class="navbar-end hidden lg:flex w-full">
       <ul class="menu menu-horizontal px-1">
+        <li><a href="/">Home</a></li>
+
         <li><a href="#ubyus">A Ubyus</a></li>
         <li><a href="#atuacao">Nossa Atuação</a></li>
         <li><a href="#contato">Contato</a></li>
