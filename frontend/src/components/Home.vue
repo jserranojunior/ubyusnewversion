@@ -4,7 +4,7 @@
       <div class="flex flex-wrap mt-16 justify-between mx-8">
         <div class="w-full md:w-1/5">
           <img
-            src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
+            src="../assets/images/consultoria.png"
             class=""
             width="150"
             height="150"
@@ -26,7 +26,7 @@
             <router-link to="fusoeseaquisicoes">
               <div class="flex">
                 <img
-                  src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
+                  src="../assets/images/fusoes.png"
                   alt="Movie"
                   width="150px"
                   height="150px"
@@ -47,7 +47,7 @@
             <router-link to="estruturacao">
               <div class="flex">
                 <img
-                  src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
+                  src="../assets/images/estruturacao.png"
                   alt="Movie"
                   width="150px"
                   height="150px"
@@ -62,10 +62,10 @@
         </div>
         <div class="w-1/3">
           <div class="card card-side bg-base-100 shadow-xl">
-            <router-link to="fusoeseaquisicoes">
+            <router-link to="sucessao">
               <div class="flex">
                 <img
-                  src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
+                  src="../assets/images/sucessao.png"
                   alt="Movie"
                   width="150px"
                   height="150px"
@@ -81,34 +81,38 @@
       </div>
       <div class="flex gap-2 justify-center py-8">
         <div class="w-1/3">
-          <div class="card card-side bg-base-100 shadow-xl">
-            <img
-              src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
-              alt="Movie"
-              width="150px"
-              height="150px"
-              class="w-1/3"
-            />
+          <router-link to="gestao">
+            <div class="card card-side bg-base-100 shadow-xl">
+              <img
+                src="../assets/images/gestao.png"
+                alt="Movie"
+                width="150px"
+                height="150px"
+                class="w-1/3"
+              />
 
-            <div class="card-body">
-              <p>Gestão de <br />Pessoas</p>
+              <div class="card-body">
+                <p>Gestão de <br />Pessoas</p>
+              </div>
             </div>
-          </div>
+          </router-link>
         </div>
         <div class="w-1/3">
-          <div class="card card-side bg-base-100 shadow-xl">
-            <img
-              src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
-              alt="Movie"
-              width="150px"
-              height="150px"
-              class="w-1/3"
-            />
+          <router-link to="solucoes">
+            <div class="card card-side bg-base-100 shadow-xl">
+              <img
+                src="../assets/images/solucoes.png"
+                alt="Movie"
+                width="150px"
+                height="150px"
+                class="w-1/3"
+              />
 
-            <div class="card-body">
-              <p>Soluções em Serviços Financeiros e Consórcio</p>
+              <div class="card-body">
+                <p>Soluções em Serviços Financeiros e Consórcio</p>
+              </div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
 
@@ -118,9 +122,7 @@
         <div class="w-full md:w-1/5 px-6 my-auto border-r border-base-content">
           <div class="w-full text-xl mb-4">A Ubyus</div>
 
-          <img
-            src="https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910"
-          />
+          <img src="../assets/images/aempresa.png" />
         </div>
         <div class="w-full md:w-4/5 text-letf text-base-content py-6 px-4">
           <h2>
