@@ -5,4 +5,6 @@ import { Icon } from "@iconify/vue";
 import App from "./components/App.vue";
 import router from "./routes";
 
-createApp(App).component("Icon", Icon).use(router).mount("#app");
+console.log(router.options.routes);
+
+createApp(App).use(router).component("Icon", Icon).mount("#app");

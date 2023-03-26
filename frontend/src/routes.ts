@@ -3,7 +3,7 @@ import Home from "./components/Home.vue";
 import FusoesEAquisicoes from "./components/FusoesEAquisicoes.vue";
 import Estruturacao from "./components/Estruturacao.vue";
 
-export default createRouter({
+const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
@@ -23,3 +23,5 @@ export default createRouter({
     },
   ],
 });
+
+export default router;
