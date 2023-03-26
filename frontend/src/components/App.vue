@@ -1,11 +1,7 @@
 <script setup lang="ts">
-  import { onMounted } from "vue";
   import Navbar from "./Navbar.vue";
   import Footer from "./Footer.vue";
-  import Home from "./Home.vue";
   import BtnToTop from "./BtnToTop.vue";
-
-  onMounted(() => {});
 </script>
 
 <template>
