@@ -1,5 +1,5 @@
 <template>
-  <x class="flex my-4">
+  <x class="flex my-4 px-8">
     <div class="w-full">
       <h1 class="text-xl">Nossas Atuações</h1>
     </div>
@@ -19,7 +19,7 @@
       </div>
     </div>
   </div>
-  <div class="flex justify-center items-center">
+  <div class="flex justify-center items-center mb-12">
     <div class="w-auto">
       <div class="mx-auto px-auto text-lg mt-6">
         <p class="mt-1" v-for="servico in servicos">

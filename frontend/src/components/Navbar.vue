@@ -26,9 +26,9 @@
           tabindex="0"
           class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li><a href="#ubyus">A Ubyus</a></li>
-          <li><a href="#atuacao">Nossa Atuação</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="/#aubyus">A Ubyus</a></li>
+          <li><a href="/#atuacao">Nossa Atuação</a></li>
+          <li><router-link to="contato"> Contato</router-link></li>
         </ul>
       </div>
     </div>
@@ -36,9 +36,9 @@
       <ul class="menu menu-horizontal px-1">
         <li><a href="/">Home</a></li>
 
-        <li><a href="#ubyus">A Ubyus</a></li>
-        <li><a href="#atuacao">Nossa Atuação</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="/#aubyus">A Ubyus</a></li>
+        <li><a href="/#atuacao">Nossa Atuação</a></li>
+        <li><router-link to="contato"> Contato</router-link></li>
       </ul>
     </div>
   </div>

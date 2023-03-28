@@ -19,6 +19,5 @@
     "Negociação e Fechamento",
   ];
 
-  const image =
-    "https://img.freepik.com/fotos-gratis/texturas-de-parede-cinza-para-plano-de-fundo_74190-4389.jpg?w=740&t=st=1679609784~exp=1679610384~hmac=ffda5ff069da5bd954cedb5ef34b267c04d92fbc297766bb389c6dd4235da910";
+  const image = "/static/images/fusoes.png";
 </script>

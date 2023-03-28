@@ -5,6 +5,7 @@ import Estruturacao from "./components/Estruturacao.vue";
 import Sucessao from "./components/Sucessao.vue";
 import Gestao from "./components/Gestao.vue";
 import Solucoes from "./components/Solucoes.vue";
+import Contato from "./components/Contato.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: "/solucoes",
       name: "solucoes",
       component: Solucoes,
+    },
+    {
+      path: "/contato",
+      name: "contato",
+      component: Contato,
     },
   ],
 });
