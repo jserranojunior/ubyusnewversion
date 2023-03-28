@@ -7,59 +7,51 @@
       >
     </div>
 
-    <div class="flex flex-wrap justify-center px-12 mt-2 py-6">
+    <div class="flex flex-wrap justify-center px-12 py-6">
       <div class="w-full md:w-1/2 px:0 md:px-6 py-4">
-        <div class="card bg-base-content shadow-xl mx-auto">
+        <div class="card mx-auto">
           <div class="card-body p-2 text-center">
             <div>
-              <div class="p-10 bg-base-content">
+              <div class="p-10 bg-base-300 shadow-2xl">
                 <form class="grid grid-cols-1 gap-6" action="#" method="POST">
                   <div>
-                    <label class="block mb-2 font-bold" for="name">
-                      Nome
-                    </label>
                     <input
-                      class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                      class="rounded-full input input-bordered w-full max-w-x"
                       type="text"
                       name="name"
                       id="name"
+                      placeholder="Nome"
                       required
                     />
                   </div>
                   <div>
-                    <label class="block mb-2 font-bold" for="email">
-                      E-mail
-                    </label>
                     <input
-                      class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                      class="rounded-full input input-bordered w-full max-w-x"
                       type="email"
                       name="email"
                       id="email"
+                      placeholder="E-mail"
                       required
                     />
                   </div>
                   <div>
-                    <label class="block mb-2 font-bold" for="phone">
-                      Celular
-                    </label>
                     <input
-                      class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                      class="rounded-full input input-bordered w-full max-w-x"
                       type="tel"
                       name="phone"
                       id="phone"
+                      placeholder="Celular"
                       required
                     />
                   </div>
                   <div>
-                    <label class="block mb-2 font-bold" for="message">
-                      Mensagem
-                    </label>
                     <textarea
-                      class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                      class="rounded-lg input input-bordered w-full max-w-x"
                       name="message"
                       id="message"
-                      rows="4"
+                      rows="12"
                       required
+                      placeholder="Mensagem"
                     ></textarea>
                   </div>
                   <div>

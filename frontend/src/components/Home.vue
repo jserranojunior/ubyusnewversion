@@ -160,7 +160,9 @@
           </div>
           <div class="mt-4 text-center mx-auto">
             <div class="btn btn-outline btn-sm">
-              <div class="w-auto">Sócios</div>
+              <router-link to="socios">
+                <div class="w-auto">Sócios</div>
+              </router-link>
             </div>
           </div>
         </div>
