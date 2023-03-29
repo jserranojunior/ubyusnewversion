@@ -1,14 +1,11 @@
 <template>
   <div>
     <section id="home">
-      <div class="flex flex-wrap mt-16 justify-between mx-8">
+      <div
+        class="flex flex-wrap mt-16 justify-center md:justify-between mx-4 md:mx-8"
+      >
         <div class="w-full md:w-1/5">
-          <img
-            src="/static/images/consultoria.png"
-            class=""
-            width="150"
-            height="150"
-          />
+          <img src="/static/images/consultoria.png" class="" />
         </div>
         <div class="w-full md:w-auto py-6 text-left mx-auto">
           <h2 class="text-4xl">
@@ -17,13 +14,13 @@
         </div>
       </div>
 
-      <div class="flex mt-16 mx-8">
+      <div class="flex flex-wrap mt-4 md:mt-8 mx-4 md:mx-8">
         <div class="w-full">Nossa Atuação</div>
       </div>
 
       <section id="atuacao">
-        <div class="flex gap-2 my-4 justify-center mx-8">
-          <div class="w-1/3">
+        <div class="flex flex-wrap mt-4 md:py-4 justify-center px-4 md:px-8">
+          <div class="w-full md:w-1/3 px-1">
             <div class="card card-side bg-base-100 shadow-xl">
               <router-link to="fusoeseaquisicoes">
                 <div class="flex">
@@ -34,7 +31,7 @@
                     height="150px"
                     class="w-1/3"
                   />
-                  <div class="card-body">
+                  <div class="card-body px-2">
                     <p>
                       Fusões e<br />
                       Aquisições
@@ -44,7 +41,7 @@
               </router-link>
             </div>
           </div>
-          <div class="w-1/3">
+          <div class="w-full md:w-1/3 px-1">
             <div class="card card-side bg-base-100 shadow-xl">
               <router-link to="estruturacao">
                 <div class="flex">
@@ -55,14 +52,14 @@
                     height="150px"
                     class="w-1/3"
                   />
-                  <div class="card-body">
+                  <div class="card-body px-2">
                     <p>Estruturação e Estratégia de Negócios</p>
                   </div>
                 </div>
               </router-link>
             </div>
           </div>
-          <div class="w-1/3">
+          <div class="w-full md:w-1/3 px-1">
             <div class="card card-side bg-base-100 shadow-xl">
               <router-link to="sucessao">
                 <div class="flex">
@@ -73,7 +70,7 @@
                     height="150px"
                     class="w-1/3"
                   />
-                  <div class="card-body">
+                  <div class="card-body px-2">
                     <p>Sucessão e Governança Familiar</p>
                   </div>
                 </div>
@@ -81,8 +78,8 @@
             </div>
           </div>
         </div>
-        <div class="flex gap-2 justify-center py-8">
-          <div class="w-1/3">
+        <div class="flex flex-wrap justify-center py-2 md:py-8 mx-4 md:mx-8">
+          <div class="w-full md:w-1/3 px-2">
             <router-link to="gestao">
               <div class="card card-side bg-base-100 shadow-xl">
                 <img
@@ -93,13 +90,13 @@
                   class="w-1/3"
                 />
 
-                <div class="card-body">
+                <div class="card-body px-2">
                   <p>Gestão de <br />Pessoas</p>
                 </div>
               </div>
             </router-link>
           </div>
-          <div class="w-1/3">
+          <div class="w-full md:w-1/3 px-2">
             <router-link to="solucoes">
               <div class="card card-side bg-base-100 shadow-xl">
                 <img
@@ -110,7 +107,7 @@
                   class="w-1/3"
                 />
 
-                <div class="card-body">
+                <div class="card-body px-2">
                   <p>Soluções em Serviços Financeiros e Consórcio</p>
                 </div>
               </div>
@@ -121,12 +118,12 @@
 
       <section id="aubyus">
         <div
-          class="border-t border-b border-base-content bg-base flex flex-wrap justify-between px-8"
+          class="border-t border-b border-base-content bg-base flex flex-wrap justify-center md:justify-between md:px-8"
         >
           <div
-            class="w-full md:w-1/5 px-6 my-auto border-r border-base-content"
+            class="w-full md:w-1/5 px-4 md:px-6 my-auto border-r border-base-content mt-6"
           >
-            <div class="w-full text-xl mb-4">A Ubyus</div>
+            <div class="w-full text-xl my-4">A Ubyus</div>
 
             <img src="/static/images/aempresa.png" />
           </div>
@@ -153,11 +150,11 @@
 
       <div class="flex flex-wrap justify-end py-6 px-6">
         <div class="w-auto justify-end">
-          <div class="tabs text-base-content">
+          <!--    <div class="tabs text-base-content">
             <a class="tab tab-bordered text-base-content">João Rached</a>
             <a class="tab tab-bordered text-base-content">Eduardo Beadle</a>
             <a class="tab tab-bordered text-base-content">Nilton Junior</a>
-          </div>
+          </div> -->
           <div class="mt-4 text-center mx-auto">
             <div class="btn btn-outline btn-sm">
               <router-link to="socios">

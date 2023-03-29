@@ -1,11 +1,11 @@
 <template>
   <LogoArea></LogoArea>
-  <div class="navbar border-b border-base-content">
+  <div class="navbar border-b border-base-content p-0 m-0 py-0 min-h-0">
     <div class="navbar-start w-auto">
       <div class="dropdown text-center mx-auto">
         <label
           tabindex="0"
-          class="btn btn-primary text-gray-100 lg:hidden ml-auto"
+          class="ml-4 mb-4 btn btn-primary bg-yellow-700 hver:bg-yellow-800 text-gray-100 lg:hidden ml-auto"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
