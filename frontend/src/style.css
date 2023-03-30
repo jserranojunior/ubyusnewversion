@@ -3,4 +3,10 @@
 svg {
   display: inline;
 }
+
+.navbar-link:hover{
+@apply bg-transparent  bg-gray-100 
+}
+
+
 @tailwind utilities;
