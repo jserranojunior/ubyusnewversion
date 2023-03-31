@@ -3,7 +3,7 @@
     <section id="home" class="">
       <div>
         <div
-          class="flex border-y border-ubyus-200 flex-wrap mt-8 justify-center md:justify-between mx-4 md:mx-8"
+          class="flex border-y border-ubyus-200 flex-wrap mt-0 md:mt-8 justify-center md:justify-between mx-4 md:mx-8"
         >
           <div class="w-full md:w-1/6">
             <img src="/static/images/consultoria.png" class="" />
@@ -11,23 +11,25 @@
           <div
             class="w-full md:w-auto py-6 text-left mx-auto align-middle my-auto"
           >
-            <h2 class="text-4xl">
+            <h2 class="text-4xl prompt font-bold">
               Consultoria em Gestão e Estratégia de Negócios
             </h2>
           </div>
         </div>
       </div>
 
-      <div class="flex flex-wrap mt-4 md:mt-8 mx-4 md:mx-8">
-        <div class="w-full text-xl">Nossa Atuação</div>
+      <div class="flex flex-wrap mt-0 md:mt-4 md:mt-8 mx-4 md:mx-8">
+        <div class="w-full text-xl prompt font-bold tracking-wide">
+          Nossa Atuação
+        </div>
       </div>
 
       <section id="atuacao">
         <div class="px-4 md:px-8">
           <div
-            class="flex flex-wrap md:py-0 justify-center border-y border-ubyus-200"
+            class="flex flex-wrap md:py-0 justify-center md:border-y border-ubyus-200"
           >
-            <div class="w-full md:w-1/3">
+            <div class="w-full md:w-1/3 px-1 my-2">
               <div class="card card-side bg-base-100 shadow-xl">
                 <router-link to="fusoeseaquisicoes">
                   <div class="flex">
@@ -48,7 +50,7 @@
                 </router-link>
               </div>
             </div>
-            <div class="w-full md:w-1/3 px-1">
+            <div class="w-full md:w-1/3 px-1 my-2">
               <div class="card card-side bg-base-100 shadow-xl">
                 <router-link to="estruturacao">
                   <div class="flex">
@@ -66,7 +68,7 @@
                 </router-link>
               </div>
             </div>
-            <div class="w-full md:w-1/3 px-1">
+            <div class="w-full md:w-1/3 px-1 my-2">
               <div class="card card-side bg-base-100 shadow-xl">
                 <router-link to="sucessao">
                   <div class="flex">
@@ -86,7 +88,7 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap justify-center my-2 md:my-8 border-y border-ubyus-200"
+            class="flex flex-wrap justify-center md:my-8 md:border-y border-ubyus-200"
           >
             <div class="w-full md:w-1/3 px-2">
               <router-link to="gestao">
@@ -99,13 +101,13 @@
                     class="w-1/3"
                   />
 
-                  <div class="card-body px-2">
+                  <div class="card-body px-1 my-2">
                     <p>Gestão de <br />Pessoas</p>
                   </div>
                 </div>
               </router-link>
             </div>
-            <div class="w-full md:w-1/3 px-2">
+            <div class="w-full md:w-1/3 px-1 my-2">
               <router-link to="solucoes">
                 <div class="card card-side bg-base-100 shadow-xl">
                   <img
@@ -131,9 +133,11 @@
           class="border-ubyus-200 bg-base flex flex-wrap justify-center md:justify-between md:px-2"
         >
           <div class="w-full md:w-1/5 px-4 md:px-6 border-r order-ubyus-200">
-            <div class="w-full text-xl my-4">A Ubyus</div>
+            <div class="w-full text-xl my-4 prompt font-bold tracking-wide">
+              A Ubyus
+            </div>
 
-            <img src="/static/images/aempresa.png" class="mt-12" />
+            <img src="/static/images/aempresa.png" class="mt-0 md:mt-12" />
           </div>
           <div class="w-full md:w-4/5 text-letf text-base-content mt-4 px-4">
             <h2>
@@ -169,7 +173,17 @@
                 <div class="mt-4 text-center mx-auto">
                   <div class="font-bold btn-sm">
                     <router-link to="socios">
-                      <div class="w-auto">Sócios</div>
+                      <div class="flex justify-center text-center">
+                        <div>
+                          <img
+                            src="/static/images/vida.png"
+                            width="20"
+                            class="py-0 my-0"
+                          />
+                        </div>
+
+                        <div class="mx-2">Os Sócios</div>
+                      </div>
                     </router-link>
                   </div>
                 </div>
