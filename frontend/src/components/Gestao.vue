@@ -16,5 +16,5 @@
     "Desenvolvimento Humano",
   ];
 
-  const image = "/static/images/fusoes.png";
+  const image = "/static/images/gestao.png";
 </script>

@@ -11,13 +11,19 @@
       <div class="w-full md:w-1/3 mt-2 md mt-0">
         contato@ubyusadvisors.com <br />
         <div class="mx-auto text-center">
-          <p class="text-center">
-            <Icon
-              class="flex-initial"
-              width="24"
-              icon="ph:linkedin-logo-bold"
-            />
-          </p>
+          <a
+            href="https://www.linkedin.com/company/ubyus-advisors/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p class="text-center">
+              <Icon
+                class="flex-initial"
+                width="24"
+                icon="ph:linkedin-logo-bold"
+              />
+            </p>
+          </a>
         </div>
       </div>
 
