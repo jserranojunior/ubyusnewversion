@@ -6,12 +6,12 @@
           class="flex border-y border-ubyus-200 flex-wrap mt-0 md:mt-8 justify-center md:justify-between mx-4 md:mx-8"
         >
           <div class="w-full md:w-1/6">
-            <img src="/static/images/consultoria.png" class="" />
+            <img src="/static/images/consultoria.png" class="u--fadeInLeft" />
           </div>
           <div
             class="w-full md:w-auto py-6 text-left mx-auto align-middle my-auto"
           >
-            <h2 class="text-4xl prompt font-bold">
+            <h2 class="text-4xl prompt font-bold u--fadeInRight">
               Consultoria em Gestão e Estratégia de Negócios
             </h2>
           </div>
@@ -19,7 +19,9 @@
       </div>
 
       <div class="flex flex-wrap mt-0 md:mt-4 md:mt-8 mx-4 md:mx-8">
-        <div class="w-full text-xl prompt font-bold tracking-wide">
+        <div
+          class="w-full text-xl prompt font-bold tracking-wide u--fadeInLeft"
+        >
           Nossa Atuação
         </div>
       </div>
@@ -38,10 +40,10 @@
                       alt="Movie"
                       width="150px"
                       height="150px"
-                      class="w-1/3"
+                      class="w-1/3 u--fadeInLeft"
                     />
                     <div class="card-body px-2">
-                      <p>
+                      <p class="u--fadeInUp">
                         Fusões e<br />
                         Aquisições
                       </p>
@@ -59,10 +61,12 @@
                       alt="Movie"
                       width="150px"
                       height="150px"
-                      class="w-1/3"
+                      class="w-1/3 u--fadeInLeft"
                     />
                     <div class="card-body px-2">
-                      <p>Estruturação e Estratégia de Negócios</p>
+                      <p class="u--fadeInUp">
+                        Estruturação e Estratégia de Negócios
+                      </p>
                     </div>
                   </div>
                 </router-link>
@@ -77,10 +81,10 @@
                       alt="Movie"
                       width="150px"
                       height="150px"
-                      class="w-1/3"
+                      class="w-1/3 u--fadeInLeft"
                     />
                     <div class="card-body px-2">
-                      <p>Sucessão e Governança Familiar</p>
+                      <p class="u--fadeInUp">Sucessão e Governança Familiar</p>
                     </div>
                   </div>
                 </router-link>
@@ -98,11 +102,11 @@
                     alt="Movie"
                     width="150px"
                     height="150px"
-                    class="w-1/3"
+                    class="w-1/3 u--fadeInLeft"
                   />
 
                   <div class="card-body px-1 my-2">
-                    <p>Gestão de <br />Pessoas</p>
+                    <p class="u--fadeInUp">Gestão de <br />Pessoas</p>
                   </div>
                 </div>
               </router-link>
@@ -115,11 +119,13 @@
                     alt="Movie"
                     width="150px"
                     height="150px"
-                    class="w-1/3"
+                    class="w-1/3 u--fadeInLeft"
                   />
 
                   <div class="card-body px-2">
-                    <p>Soluções em Serviços Financeiros e Consórcio</p>
+                    <p class="u--fadeInUp">
+                      Soluções em Serviços Financeiros e Consórcio
+                    </p>
                   </div>
                 </div>
               </router-link>
@@ -133,33 +139,50 @@
           class="border-ubyus-200 bg-base flex flex-wrap justify-center md:justify-between md:px-2"
         >
           <div class="w-full md:w-1/5 px-4 md:px-6 border-r order-ubyus-200">
-            <div class="w-full text-xl my-4 prompt font-bold tracking-wide">
+            <div
+              class="w-full text-xl my-4 prompt font-bold tracking-wide u--fadeInLeft"
+            >
               A Ubyus
             </div>
 
-            <img src="/static/images/aempresa.png" class="mt-0 md:mt-12" />
+            <img
+              src="/static/images/aempresa.png"
+              class="mt-0 md:mt-12 u--fadeInUp"
+            />
           </div>
           <div class="w-full md:w-4/5 text-letf text-base-content mt-4 px-4">
-            <h2>
-              <span class="text-ubyus-100 font-bold"
-                >U<span class="text-ubyus-300">by</span>US</span
-              >
-              expressa o princípio de REPRESENTATIVIDADE, materializado por
-              relações sinceras, profissionais e perenes com nossos clientes.<br /><br />
-              O cliente ("you") passa a ser representado por nossa organização,
-              com suas demandas e anseios sendo incorporados por nós ("by us"),
-              contando com a nossa PRESENÇA efetiva em todas as etapas do
-              Projeto.<br /><br />
-              Temos como propósito a lógica COLABORATIVA no desenvolvimento dos
-              negócios, buscando DIVERSIDADE nas inteligências e recursos
-              aplicados, assegurando o aprendizado contínuo e a INOVAÇÃO
-              constante de nossas soluções.<br /><br />
-              Para nós da
-              <span class="text-ubyus-100 font-bold"
-                >U<span class="text-ubyus-300">by</span>US</span
-              >, é essencial que nossa atuação represente uma contribuição para
-              a construção de um mundo cada vez mais plural, solidário e humano.
-            </h2>
+            <div>
+              <p class="u--fadeInRight">
+                <span class="text-ubyus-100 font-bold"
+                  >U<span class="text-ubyus-300">by</span>US</span
+                >
+                expressa o princípio de REPRESENTATIVIDADE, materializado por
+                relações sinceras, profissionais e perenes com nossos
+                clientes.<br /><br />
+              </p>
+              <p class="u--fadeInLeft">
+                O cliente ("you") passa a ser representado por nossa
+                organização, com suas demandas e anseios sendo incorporados por
+                nós ("by us"), contando com a nossa PRESENÇA efetiva em todas as
+                etapas do Projeto.
+              </p>
+              <br /><br />
+              <p class="u--fadeInRight">
+                Temos como propósito a lógica COLABORATIVA no desenvolvimento
+                dos negócios, buscando DIVERSIDADE nas inteligências e recursos
+                aplicados, assegurando o aprendizado contínuo e a INOVAÇÃO
+                constante de nossas soluções.
+              </p>
+              <br /><br />
+              <p class="u--fadeInLeft">
+                Para nós da
+                <span class="text-ubyus-100 font-bold"
+                  >U<span class="text-ubyus-300">by</span>US</span
+                >, é essencial que nossa atuação represente uma contribuição
+                para a construção de um mundo cada vez mais plural, solidário e
+                humano.
+              </p>
+            </div>
           </div>
           <div class="w-full">
             <div class="flex flex-wrap justify-end px-6">
