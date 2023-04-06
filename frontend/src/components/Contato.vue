@@ -21,7 +21,7 @@
                       name="name"
                       id="name"
                       placeholder="Nome"
-                      v-model="state.nome"
+                      v-model="inputsEmail.name"
                       required
                     />
                   </div>
@@ -32,7 +32,7 @@
                       name="email"
                       id="email"
                       placeholder="E-mail"
-                      v-model="state.email"
+                      v-model="inputsEmail.email"
                       required
                     />
                   </div>
@@ -43,7 +43,7 @@
                       name="phone"
                       id="phone"
                       placeholder="Celular"
-                      v-model="state.celular"
+                      v-model="inputsEmail.phone"
                       required
                     />
                   </div>
@@ -53,23 +53,36 @@
                       name="message"
                       id="message"
                       rows="6"
-                      v-model="state.mensagem"
+                      v-model="inputsEmail.message"
                       required
                       placeholder="Mensagem"
                     ></textarea>
                   </div>
                   <div>
-                    <a
-                      target="_blank"
-                      :href="`https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=${state.email}&amp;su=${state.assunto}&amp;body=${state.corpo}&amp;authuser=0`"
+                    <button
+                      class="bg-ubyus-300 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                      type="submit"
+                      @click="sendEmail()"
+                      v-if="statusSendmail !== 'enviandoEmail'"
                     >
-                      <button
-                        class="bg-ubyus-300 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="submit"
-                      >
-                        Enviar
-                      </button>
-                    </a>
+                      Enviar
+                    </button>
+                  </div>
+
+                  <div class="mt-1" v-if="statusSendmail !== 'enviandoEmail'">
+                    <div class="flex alert alert-warning bg-ubyus-300">
+                      <div class="w-full">
+                        <label class="text-center w-full">
+                          <i class="fas fa-circle-notch fa-spin mr-1">
+                            <span>Enviando e-mail, por favor aguarde</span>
+                          </i>
+
+                          <!-- <span v-if="lang == 'portugues'">Enviando e-mail, por favor aguarde</span>
+                      <span v-else>Sending email, please wait</span> -->
+                          ...
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -82,19 +95,6 @@
 </template>
 
 <script setup lang="ts">
-  import { reactive, watch } from "vue";
-
-  const state = reactive({
-    destinatario: "management@ubysuadvisors.com",
-    assunto: "E-mail enviado via formulário do site",
-    mensagem: "",
-    celular: "",
-    nome: "",
-    email: "",
-    corpo: "",
-  });
-
-  watch(state, () => {
-    state.corpo = `Meu nome é ${state.nome} %0A Meu e-mail e o ${state.email}, meu celular é o ${state.celular} %0A Minha mensagem: ${state.mensagem}`;
-  });
+  import { useEmail } from "../provides/use/useEmail";
+  const { inputsEmail, sendEmail, statusSendmail } = useEmail();
 </script>
