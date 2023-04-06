@@ -1,3 +1,2 @@
-Falar sobre hospedagem de graça caso nao coloque o envio do contato
-
-### Contato
+#Nossas ações
+Colocar ele apontando para meu dominio e fazer o contato funcionar
