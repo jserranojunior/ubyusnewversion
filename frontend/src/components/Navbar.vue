@@ -37,7 +37,7 @@
         <li><a class="navbar-link" href="/">Home</a></li>
 
         <li>
-          <a class="navbar-link" href="/#aubyus">A Ubyus</a>
+          <a class="navbar-link" href="/#aubyus">A UbyUS</a>
         </li>
         <li><a class="navbar-link" href="/#atuacao">Nossa Atuação</a></li>
         <li>

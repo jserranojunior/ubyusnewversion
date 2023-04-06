@@ -11,21 +11,21 @@
 
   <div class="flex justify-center">
     <div class="w-auto">
-      <div class="card card-side bg-base-100 shadow-xl">
-        <router-link to="nossafuncao">
-          <div class="flex">
-            <img
-              :src="props.image"
-              alt="Movie"
-              width="150"
-              height="150"
-              class="u--fadeInUp"
-            />
-            <div class="card-body text-xl u--fadeInDown">
-              <p>{{ props.name }}</p>
-            </div>
+      <div
+        class="card card-side bg-base-100 shadow-sm border-t border-gray-100"
+      >
+        <div class="flex">
+          <img
+            :src="props.image"
+            alt="Movie"
+            width="150"
+            height="150"
+            class="u--fadeInUp"
+          />
+          <div class="card-body text-xl u--fadeInDown my-auto">
+            <p>{{ props.name }}</p>
           </div>
-        </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -43,87 +43,91 @@
   </div>
 
   <section id="atuacao" class="py-12">
-    <div class="flex flex-wrap my-4 justify-center mx-8">
+    <div class="flex flex-wrap my-4 justify-center mx-3">
       <div
-        class="w-full md:w-1/4"
+        class="card card-side bg-base-100 shadow-xl u--fadeInLeft w-full md:w-1/4"
         v-if="$router.currentRoute.value.fullPath !== '/fusoeseaquisicoes'"
       >
-        <div class="card card-side bg-base-100 shadow-xl u--fadeInLeft">
-          <router-link to="fusoeseaquisicoes">
-            <div class="flex">
-              <img src="/static/images/fusoes.png" alt="Movie" class="w-1/3" />
-              <div class="card-body px-1 text-xs">
-                <p>
-                  Fusões e<br />
-                  Aquisições
-                </p>
-              </div>
+        <router-link to="fusoeseaquisicoes">
+          <div class="flex">
+            <div class="w-1/3">
+              <img src="/static/images/fusoes.png" class="u--fadeInLeft" />
             </div>
-          </router-link>
-        </div>
-      </div>
-      <div
-        class="w-full md:w-1/4"
-        v-if="$router.currentRoute.value.fullPath !== '/estruturacao'"
-      >
-        <div class="card card-side bg-base-100 shadow-xl u--fadeInRight">
-          <router-link to="estruturacao">
-            <div class="flex">
-              <img
-                src="/static/images/estruturacao.png"
-                alt="Movie"
-                class="w-1/3 bg-red-800"
-              />
-              <div class="card-body px-1 text-xs">
-                <p>Estruturação e Estratégia de Negócios</p>
-              </div>
-            </div>
-          </router-link>
-        </div>
-      </div>
-      <div
-        class="w-full md:w-1/4"
-        v-if="$router.currentRoute.value.fullPath !== '/sucessao'"
-      >
-        <div class="card card-side bg-base-100 shadow-xl u--fadeInLeft">
-          <router-link to="sucessao">
-            <div class="flex">
-              <img
-                src="/static/images/sucessao.png"
-                alt="Movie"
-                class="w-1/3"
-              />
-              <div class="card-body px-1 text-xs">
-                <p>Sucessão e Governança Familiar</p>
-              </div>
-            </div>
-          </router-link>
-        </div>
-      </div>
-      <div
-        class="w-full md:w-1/4"
-        v-if="$router.currentRoute.value.fullPath !== '/gestao'"
-      >
-        <router-link to="gestao">
-          <div class="card card-side bg-base-100 shadow-xl u--fadeInRight">
-            <img src="/static/images/gestao.png" alt="Movie" class="w-1/3" />
-
-            <div class="card-body px-1 text-xs">
-              <p>Gestão de <br />Pessoas</p>
+            <div class="px-2 my-auto w-2/3">
+              <p class="u--fadeInUp text-sm font-bold">Fusões e Aquisições</p>
             </div>
           </div>
         </router-link>
       </div>
+
       <div
-        class="w-full md:w-1/4"
+        class="w-full md:w-1/4 card card-side bg-base-100 shadow-xl u--fadeInRight"
+        v-if="$router.currentRoute.value.fullPath !== '/estruturacao'"
+      >
+        <router-link to="estruturacao">
+          <div class="flex">
+            <div class="w-1/3">
+              <img
+                src="/static/images/estruturacao.png"
+                class="u--fadeInLeft"
+              />
+            </div>
+            <div class="px-2 my-auto w-2/3">
+              <p class="u--fadeInUp text-sm font-bold">
+                Estruturação e Estratégia de Negócios
+              </p>
+            </div>
+          </div>
+        </router-link>
+      </div>
+
+      <div
+        class="w-full md:w-1/4 card card-side bg-base-100 shadow-xl u--fadeInLeft"
+        v-if="$router.currentRoute.value.fullPath !== '/sucessao'"
+      >
+        <router-link to="sucessao">
+          <div class="flex">
+            <div class="w-1/3">
+              <img src="/static/images/sucessao.png" class="u--fadeInLeft" />
+            </div>
+            <div class="px-2 my-auto w-2/3">
+              <p class="u--fadeInUp text-sm font-bold">
+                Sucessão e Governança Familiar
+              </p>
+            </div>
+          </div>
+        </router-link>
+      </div>
+
+      <div
+        class="card card-side bg-base-100 shadow-xl u--fadeInLeft w-full md:w-1/4"
+        v-if="$router.currentRoute.value.fullPath !== '/gestao'"
+      >
+        <router-link to="gestao">
+          <div class="flex">
+            <div class="w-1/3">
+              <img src="/static/images/gestao.png" class="u--fadeInLeft" />
+            </div>
+            <div class="px-2 my-auto w-2/3">
+              <p class="u--fadeInUp text-sm font-bold">Gestão de Pessoas</p>
+            </div>
+          </div>
+        </router-link>
+      </div>
+
+      <div
+        class="card card-side bg-base-100 shadow-xl u--fadeInLeft w-full md:w-1/4"
         v-if="$router.currentRoute.value.fullPath !== '/solucoes'"
       >
         <router-link to="solucoes">
-          <div class="card card-side bg-base-100 shadow-xl u--fadeInLeft">
-            <img src="/static/images/solucoes.png" alt="Movie" class="w-1/3" />
-
-            <div class="card-body px-1 text-xs">
-              <p>Soluções em Serviços Financeiros e Consórcio</p>
+          <div class="flex">
+            <div class="w-1/3">
+              <img src="/static/images/solucoes.png" class="u--fadeInLeft" />
+            </div>
+            <div class="px-2 my-auto w-2/3">
+              <p class="u--fadeInUp text-sm font-bold">
+                Soluções em Serviços Financeiros e Consórcio
+              </p>
             </div>
           </div>
         </router-link>
