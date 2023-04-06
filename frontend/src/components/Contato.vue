@@ -73,13 +73,52 @@
                     <div class="flex alert alert-warning bg-ubyus-300">
                       <div class="w-full">
                         <label class="text-center w-full">
-                          <i class="fas fa-circle-notch fa-spin mr-1">
-                            <span>Enviando e-mail, por favor aguarde</span>
-                          </i>
-
-                          <!-- <span v-if="lang == 'portugues'">Enviando e-mail, por favor aguarde</span>
-                      <span v-else>Sending email, please wait</span> -->
+                          <i class="fas fa-circle-notch fa-spin mr-1"></i>
+                          <span v-if="lang == 'portugues'"
+                            >Enviando e-mail, por favor aguarde</span
+                          >
+                          <span v-else>Sending email, please wait</span>
                           ...
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="mt-1"
+                    v-if="statusSendmail == 'enviadoComSuccesso'"
+                  >
+                    <div class="flex alert alert-success bg-ubyus-100">
+                      <div class="w-full text-center">
+                        <label class="text-center w-full">
+                          <span v-if="lang == 'portugues'">
+                            Agradecemos pela sua mensagem!
+                            <br />Em breve, a equipe da UbyUS Advisors entrará
+                            em contato com você!
+                          </span>
+                          <span class="text-center" v-else>
+                            Thanks for contacting us!
+                            <br />We will contact you soon.
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-1"
+                    v-if="statusSendmail == 'erroAoEnviarEmail'"
+                  >
+                    <div class="flex alert alert-error">
+                      <div class="w-full text-center">
+                        <label class="text-center w-full">
+                          <span v-if="lang == 'portugues'"
+                            >Erro ao enviar e-mail, por favor entre em contato
+                            atrávez do e-mail contato@ubyus.com.br</span
+                          >
+                          <span class="text-center" v-else
+                            >Error when sending e-mail, please contact us via
+                            e-mail contato@ubyus.com.br</span
+                          >
                         </label>
                       </div>
                     </div>
@@ -96,5 +135,8 @@
 
 <script setup lang="ts">
   import { useEmail } from "../provides/use/useEmail";
+  import { useLang } from "../provides/use/useLang";
+
   const { inputsEmail, sendEmail, statusSendmail } = useEmail();
+  const { lang } = useLang();
 </script>
