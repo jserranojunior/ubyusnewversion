@@ -69,7 +69,7 @@
                     </button>
                   </div>
 
-                  <div class="mt-1" v-if="statusSendmail !== 'enviandoEmail'">
+                  <div class="mt-1" v-if="statusSendmail == 'enviandoEmail'">
                     <div class="flex alert alert-warning bg-ubyus-300">
                       <div class="w-full">
                         <label class="text-center w-full">
