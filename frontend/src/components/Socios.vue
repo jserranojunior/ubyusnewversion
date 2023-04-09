@@ -8,23 +8,39 @@
         <div
           class="itens-center align-middle my-auto ml-4 text-xl prompt font-bold border-green-800 text-ubyus-100 u--fadeInLeft"
         >
-          Sócios
+          <span v-if="lang == 'portugues'">Sócios </span>
+          <span v-else> Partners </span>
         </div>
       </div>
     </div>
 
     <div class="flex px-8 py-4 md:py-8">
       <div class="w-full u--fadeInRight">
-        Na
-        <span class="text-ubyus-100 font-bold"
-          >U<span class="text-ubyus-300">by</span>US</span
-        >
-        <span class="font-bold text-ubyus-100">Advisors</span>
-        reunimos as diferentes competências obtidas ao longo de nossas histórias
-        e as aplicamos em nossas soluções. Contudo, muito além das nossas
-        histórias, habilidades e competências, o que nos importa é
-        compartilhá-las com nossos clientes, produzindo soluções equilibradas e
-        resultados sustentáveis.
+        <span v-if="lang == 'portugues'">
+          Na
+          <span class="text-ubyus-100 font-bold"
+            >U<span class="text-ubyus-300">by</span>US
+          </span>
+          <span class="font-bold text-ubyus-100">Advisors</span>
+          reunimos as diferentes competências obtidas ao longo de nossas
+          histórias e as aplicamos em nossas soluções. Contudo, muito além das
+          nossas histórias, habilidades e competências, o que nos importa é
+          compartilhá-las com nossos clientes, produzindo soluções equilibradas
+          e resultados sustentáveis.
+        </span>
+
+        <span v-else>
+          At
+          <span class="text-ubyus-100 font-bold"
+            >U<span class="text-ubyus-300">by</span>US
+          </span>
+          <span class="font-bold text-ubyus-100">Advisors</span>
+          we combine different skill sets, acquired over the course of our
+          individual careers, and apply them to our solutions. However, far
+          beyond our career paths, skills, and competencies, what matters to us
+          is sharing them with our clients, producing balanced solutions and
+          sustainable results.
+        </span>
       </div>
     </div>
 
@@ -65,4 +81,8 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { useLang } from "../provides/use/useLang";
+
+  const { lang, changeLang, verifyLangEnglish } = useLang();
+</script>

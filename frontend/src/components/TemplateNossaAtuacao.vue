@@ -4,7 +4,8 @@
       <div
         class="itens-center align-middle my-auto ml-4 text-xl prompt font-bold border-green-800 text-ubyus-100 u--fadeInLeft"
       >
-        Nossas Atuações
+        <span v-if="lang == 'portugues'">Nossa Atuação</span>
+        <span v-else>Our Expertise</span>
       </div>
     </div>
   </div>
@@ -54,7 +55,10 @@
               <img src="/static/images/fusoes.png" class="u--fadeInLeft" />
             </div>
             <div class="px-2 my-auto w-2/3">
-              <p class="u--fadeInUp text-sm font-bold">Fusões e Aquisições</p>
+              <p class="u--fadeInUp text-sm font-bold">
+                <span v-if="lang == 'portugues'">Fusões e Aquisições</span>
+                <span>Mergers and Acquisitions</span>s
+              </p>
             </div>
           </div>
         </router-link>
@@ -74,7 +78,10 @@
             </div>
             <div class="px-2 my-auto w-2/3">
               <p class="u--fadeInUp text-sm font-bold">
-                Estruturação e Estratégia de Negócios
+                <span v-if="lang == 'portugues'">
+                  Estruturação e Estratégia de Negócios</span
+                >
+                <span v-else>Business Structuring and Strategy</span>
               </p>
             </div>
           </div>
@@ -92,7 +99,11 @@
             </div>
             <div class="px-2 my-auto w-2/3">
               <p class="u--fadeInUp text-sm font-bold">
-                Sucessão e Governança Familiar
+                <span v-if="lang == 'portugues'"
+                  >Sucessão e Governança Familiar</span
+                >
+
+                <span v-else>Succession and Family Governance</span>
               </p>
             </div>
           </div>
@@ -109,7 +120,10 @@
               <img src="/static/images/gestao.png" class="u--fadeInLeft" />
             </div>
             <div class="px-2 my-auto w-2/3">
-              <p class="u--fadeInUp text-sm font-bold">Gestão de Pessoas</p>
+              <p class="u--fadeInUp text-sm font-bold">
+                <span v-if="lang == 'portugues'">Gestão de Pessoas</span>
+                <span v-else>People Management</span>
+              </p>
             </div>
           </div>
         </router-link>
@@ -126,7 +140,10 @@
             </div>
             <div class="px-2 my-auto w-2/3">
               <p class="u--fadeInUp text-sm font-bold">
-                Soluções em Serviços Financeiros e Consórcio
+                <span v-if="lang == 'portugues'"
+                  >Soluções em Serviços Financeiros e Consórcio</span
+                >
+                <span v-else>Financial Services and Consortium Solutions</span>
               </p>
             </div>
           </div>
@@ -137,6 +154,10 @@
 </template>
 
 <script setup lang="ts">
+  import { useLang } from "../provides/use/useLang";
+
+  const { lang, changeLang, verifyLangEnglish } = useLang();
+
   const props = defineProps({
     name: {
       type: String,

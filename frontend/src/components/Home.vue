@@ -12,7 +12,10 @@
             class="w-full md:w-auto py-6 text-left mx-auto align-middle my-auto"
           >
             <h2 class="text-4xl prompt font-bold u--fadeInRight">
-              Consultoria em Gestão e Estratégia de Negócios
+              <span v-if="lang == 'portugues'">
+                Consultoria em Gestão e Estratégia de Negócios
+              </span>
+              <span v-else>Business Management and Strategy Consulting</span>
             </h2>
           </div>
         </div>
@@ -22,7 +25,8 @@
         <div
           class="w-full text-xl prompt font-bold tracking-wide u--fadeInLeft"
         >
-          Nossa Atuação
+          <span v-if="lang == 'portugues'">Nossa Atuação</span>
+          <span v-else>Our Expertise</span>
         </div>
       </div>
 
@@ -44,7 +48,10 @@
                   </div>
                   <div class="px-2 my-auto w-2/3">
                     <p class="u--fadeInUp text-md font-bold">
-                      Fusões e Aquisições
+                      <span v-if="lang == 'portugues'"
+                        >Fusões e Aquisições</span
+                      >
+                      <span>Mergers and Acquisitions</span>
                     </p>
                   </div>
                 </div>
@@ -64,7 +71,10 @@
                   </div>
                   <div class="px-2 my-auto w-2/3">
                     <p class="u--fadeInUp text-md font-bold">
-                      Estruturação e Estratégia de Negócios
+                      <span v-if="lang == 'portugues'">
+                        Estruturação e Estratégia de Negócios</span
+                      >
+                      <span v-else>Business Structuring and Strategy</span>
                     </p>
                   </div>
                 </div>
@@ -83,7 +93,11 @@
                   </div>
                   <div class="px-2 my-auto w-2/3">
                     <p class="u--fadeInUp text-md font-bold">
-                      Sucessão e Governança Familiar
+                      <span v-if="lang == 'portugues'"
+                        >Sucessão e Governança Familiar</span
+                      >
+
+                      <span v-else>Succession and Family Governance</span>
                     </p>
                   </div>
                 </div>
@@ -103,7 +117,8 @@
                   </div>
                   <div class="px-2 my-auto w-2/3">
                     <p class="u--fadeInUp text-md font-bold">
-                      Gestão de Pessoas
+                      <span v-if="lang == 'portugues'">Gestão de Pessoas</span>
+                      <span v-else>People Management</span>
                     </p>
                   </div>
                 </div>
@@ -123,7 +138,12 @@
                   </div>
                   <div class="px-2 my-auto w-2/3">
                     <p class="u--fadeInUp text-md font-bold">
-                      Soluções em Serviços Financeiros e Consórcio
+                      <span v-if="lang == 'portugues'"
+                        >Soluções em Serviços Financeiros e Consórcio</span
+                      >
+                      <span v-else
+                        >Financial Services and Consortium Solutions</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -141,7 +161,8 @@
             <div
               class="w-full text-xl my-4 prompt font-bold tracking-wide u--fadeInLeft"
             >
-              A UbyUS
+              <span v-if="lang == 'portugues'"> A UbyUS </span>
+              <span v-else>The UbyUS</span>
             </div>
 
             <img
@@ -153,33 +174,67 @@
             <div>
               <p class="u--fadeInRight text-justify">
                 <span class="text-ubyus-100 font-bold"
-                  >U<span class="text-ubyus-300">by</span>US</span
+                  >U<span class="text-ubyus-300">by</span>US
+                </span>
+                <span v-if="lang == 'portugues'"
+                  >expressa o princípio de REPRESENTATIVIDADE, materializado por
+                  relações sinceras, profissionais e perenes com nossos
+                  clientes.</span
                 >
-                expressa o princípio de REPRESENTATIVIDADE, materializado por
-                relações sinceras, profissionais e perenes com nossos
-                clientes.<br /><br />
+                <span v-else
+                  >expresses the principle of REPRESENTATIVENESS, achieved
+                  through sincere, professional and enduring relationships with
+                  our clients.</span
+                >
+                <br /><br />
               </p>
               <p class="u--fadeInLeft text-justify">
-                O cliente ("you") passa a ser representado por nossa
-                organização, com suas demandas e anseios sendo incorporados por
-                nós ("by us"), contando com a nossa PRESENÇA efetiva em todas as
-                etapas do Projeto. <br /><br />
+                <span v-if="lang == 'portugues'"
+                  >O cliente ("you") passa a ser representado por nossa
+                  organização, com suas demandas e anseios sendo incorporados
+                  por nós ("by us"), contando com a nossa PRESENÇA efetiva em
+                  todas as etapas do Projeto.
+                </span>
+                <span v-else>
+                  The client ("you") is represented by our organization, with
+                  your demands and desires being incorporated "by us," relying
+                  on our effective PRESENCE in all stages of the Project.
+                </span>
+                <br /><br />
               </p>
 
               <p class="u--fadeInRight text-justify">
-                Temos como propósito a lógica COLABORATIVA no desenvolvimento
-                dos negócios, buscando DIVERSIDADE nas inteligências e recursos
-                aplicados, assegurando o aprendizado contínuo e a INOVAÇÃO
-                constante de nossas soluções.<br /><br />
+                <span v-if="lang == 'portugues'"
+                  >Temos como propósito a lógica COLABORATIVA no desenvolvimento
+                  dos negócios, buscando DIVERSIDADE nas inteligências e
+                  recursos aplicados, assegurando o aprendizado contínuo e a
+                  INOVAÇÃO constante de nossas soluções.</span
+                >
+                <span v-else>
+                  Our purpose is to form COLLABORATIVE logic in the development
+                  of businesses, seeking DIVERSITY in the intelligence and
+                  resources applied, ensuring continuous learning and the
+                  constant INNOVATION of our solutions.
+                </span>
+                <br /><br />
               </p>
 
               <p class="u--fadeInLeft text-justify">
-                Para nós da
-                <span class="text-ubyus-100 font-bold"
-                  >U<span class="text-ubyus-300">by</span>US</span
-                >, é essencial que nossa atuação represente uma contribuição
-                para a construção de um mundo cada vez mais plural, solidário e
-                humano.
+                <span v-if="lang == 'portugues'">Para nós da</span>
+                <span v-else>For</span>
+                <span class="text-ubyus-100 font-bold">
+                  U<span class="text-ubyus-300">by</span>US</span
+                >,
+                <span v-if="lang == 'portugues'">
+                  é essencial que nossa atuação represente uma contribuição para
+                  a construção de um mundo cada vez mais plural, solidário e
+                  humano.
+                </span>
+                <span v-else>
+                  it is essential that our efforts represent a contribution to
+                  the construction of an increasingly plural, inclusive and
+                  human world.
+                </span>
               </p>
             </div>
           </div>
@@ -204,7 +259,10 @@
                           />
                         </div>
 
-                        <div class="mx-2">Os Sócios</div>
+                        <div class="mx-2">
+                          <span v-if="lang == 'portugues'"> Os Sócios </span>
+                          <span v-else> Partners </span>
+                        </div>
                       </div>
                     </router-link>
                   </div>
@@ -218,4 +276,8 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { useLang } from "../provides/use/useLang";
+
+  const { lang, changeLang, verifyLangEnglish } = useLang();
+</script>

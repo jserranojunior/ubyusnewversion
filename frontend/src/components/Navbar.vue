@@ -1,5 +1,26 @@
 <template>
+  <div class="flex justify-end mr-5 mt-4">
+    <div>
+      <img
+        class="mx-2 cursor-pointer"
+        src="/static/images/ptbr.png"
+        width="22"
+        height="10"
+        @click="changeLang('portugues')"
+      />
+    </div>
+    <div>
+      <img
+        class="cursor-pointer"
+        src="/static/images/usa.png"
+        width="22"
+        height="10"
+        @click="changeLang('english')"
+      />
+    </div>
+  </div>
   <LogoArea></LogoArea>
+
   <div class="navbar p-0 m-0 py-0 min-h-0">
     <div class="navbar-start w-auto">
       <div class="dropdown text-center mx-auto">
@@ -26,9 +47,30 @@
           tabindex="0"
           class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li><a href="/#aubyus">A Ubyus</a></li>
-          <li><a href="/#atuacao">Nossa Atuação</a></li>
-          <li><router-link to="contato"> Contato</router-link></li>
+          <li>
+            <a v-if="lang == 'portugues'" class="navbar-link" href="/#aubyus"
+              >A UbyUS</a
+            >
+            <a v-else class="navbar-link" href="/#aubyus">The UbyUS</a>
+          </li>
+          <li>
+            <a v-if="lang == 'portugues'" class="navbar-link" href="/#atuacao"
+              >Nossa Atuação</a
+            >
+            <a v-ielse class="navbar-link" href="/#atuacao">Our Expertise</a>
+          </li>
+          <li>
+            <router-link
+              v-if="lang == 'portugues'"
+              to="contato"
+              class="navbar-link"
+            >
+              Contato</router-link
+            >
+            <router-link v-else to="contato" class="navbar-link">
+              Contact</router-link
+            >
+          </li>
         </ul>
       </div>
     </div>
@@ -37,11 +79,28 @@
         <li><a class="navbar-link" href="/">Home</a></li>
 
         <li>
-          <a class="navbar-link" href="/#aubyus">A UbyUS</a>
+          <a v-if="lang == 'portugues'" class="navbar-link" href="/#aubyus"
+            >A UbyUS</a
+          >
+          <a v-else class="navbar-link" href="/#aubyus">The UbyUS</a>
         </li>
-        <li><a class="navbar-link" href="/#atuacao">Nossa Atuação</a></li>
         <li>
-          <router-link to="contato" class="navbar-link"> Contato</router-link>
+          <a v-if="lang == 'portugues'" class="navbar-link" href="/#atuacao"
+            >Nossa Atuação</a
+          >
+          <a v-ielse class="navbar-link" href="/#atuacao">Our Expertise</a>
+        </li>
+        <li>
+          <router-link
+            v-if="lang == 'portugues'"
+            to="contato"
+            class="navbar-link"
+          >
+            Contato</router-link
+          >
+          <router-link v-else to="contato" class="navbar-link">
+            Contact</router-link
+          >
         </li>
       </ul>
     </div>
@@ -49,4 +108,13 @@
 </template>
 <script setup lang="ts">
   import LogoArea from "./LogoArea.vue";
+  import { useLang } from "../provides/use/useLang";
+  import { onBeforeMount } from "vue";
+
+  const { lang, changeLang, verifyLangEnglish } = useLang();
+
+  onBeforeMount(() => {
+    verifyLangEnglish();
+    console.log(lang.value);
+  });
 </script>
