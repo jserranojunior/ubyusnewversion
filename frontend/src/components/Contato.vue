@@ -3,8 +3,10 @@
     <div class="py-4 px-8 mt-4 text-left">
       <span
         class="text-xl border-t border-b py-4 border-green-800 prompt font-bold text-green-800"
-        >Contato</span
       >
+        <span v-if="lang == 'portugues'">Contato</span>
+        <span v-else>Contact</span>
+      </span>
     </div>
 
     <div class="flex flex-wrap justify-center px-12 pb-6">
@@ -20,7 +22,7 @@
                       type="text"
                       name="name"
                       id="name"
-                      placeholder="Nome"
+                      :placeholder="place.name"
                       v-model="inputsEmail.name"
                       required
                     />
@@ -31,7 +33,7 @@
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="E-mail"
+                      :placeholder="place.email"
                       v-model="inputsEmail.email"
                       required
                     />
@@ -42,7 +44,7 @@
                       type="tel"
                       name="phone"
                       id="phone"
-                      placeholder="Celular"
+                      :placeholder="place.phone"
                       v-model="inputsEmail.phone"
                       required
                     />
@@ -55,7 +57,7 @@
                       rows="6"
                       v-model="inputsEmail.message"
                       required
-                      placeholder="Mensagem"
+                      :placeholder="place.message"
                     ></textarea>
                   </div>
                   <div>
@@ -65,7 +67,8 @@
                       @click="sendEmail()"
                       v-if="statusSendmail !== 'enviandoEmail'"
                     >
-                      Enviar
+                      <span v-if="lang == 'portugues'">Enviar</span>
+                      <span v-else>Send</span>
                     </button>
                   </div>
 
@@ -136,7 +139,36 @@
 <script setup lang="ts">
   import { useEmail } from "../provides/use/useEmail";
   import { useLang } from "../provides/use/useLang";
+  import { reactive, watch, onBeforeMount } from "vue";
 
   const { inputsEmail, sendEmail, statusSendmail } = useEmail();
   const { lang } = useLang();
+
+  const place = reactive({
+    name: "Nome",
+    email: "E-mail",
+    phone: "Celular",
+    message: "Mensagem",
+  });
+
+  function setPLace() {
+    if (lang.value == "portugues") {
+      (place.name = "Nome"),
+        (place.email = "E-mail"),
+        (place.phone = "Celular"),
+        (place.message = "Mensagem");
+    } else {
+      (place.name = "Name"),
+        (place.email = "E-mail"),
+        (place.phone = "Phone"),
+        (place.message = "Message");
+    }
+  }
+  watch(lang, () => {
+    setPLace();
+  });
+
+  onBeforeMount(() => {
+    setPLace();
+  });
 </script>
