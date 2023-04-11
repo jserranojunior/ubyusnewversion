@@ -15,10 +15,7 @@ module.exports = {
     },
     screens: {
       print: { raw: "print" },
-      tab: "576px",
-      lap: "1024px",
-      des: "1900px",
-      ult: "2400px",
+
       ...defaultTheme.screens,
     },
   },

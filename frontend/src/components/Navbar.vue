@@ -21,8 +21,8 @@
   </div>
   <LogoArea></LogoArea>
 
-  <div class="navbar p-0 m-0 py-0 min-h-0">
-    <div class="navbar-start w-auto">
+  <div class="navbar p-0 m-0 py-0 min-h-0 my-4 sm:my :0">
+    <div class="navbar-start w-auto flex sm:hidden">
       <div class="dropdown text-center mx-auto">
         <label
           tabindex="0"
@@ -47,6 +47,8 @@
           tabindex="0"
           class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
         >
+          <li><a class="navbar-link" href="/">Home</a></li>
+
           <li>
             <a v-if="lang == 'portugues'" class="navbar-link" href="/#aubyus"
               >A UbyUS</a
@@ -57,7 +59,7 @@
             <a v-if="lang == 'portugues'" class="navbar-link" href="/#atuacao"
               >Nossa Atuação</a
             >
-            <a v-ielse class="navbar-link" href="/#atuacao">Our Expertise</a>
+            <a v-else class="navbar-link" href="/#atuacao">Our Expertise</a>
           </li>
           <li>
             <router-link
@@ -74,7 +76,7 @@
         </ul>
       </div>
     </div>
-    <div class="navbar-end hidden lg:flex w-full">
+    <div class="navbar-end hidden sm:flex w-full">
       <ul class="menu menu-horizontal px-1">
         <li><a class="navbar-link" href="/">Home</a></li>
 
@@ -88,7 +90,7 @@
           <a v-if="lang == 'portugues'" class="navbar-link" href="/#atuacao"
             >Nossa Atuação</a
           >
-          <a v-ielse class="navbar-link" href="/#atuacao">Our Expertise</a>
+          <a v-else class="navbar-link" href="/#atuacao">Our Expertise</a>
         </li>
         <li>
           <router-link

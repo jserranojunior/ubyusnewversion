@@ -10,7 +10,7 @@
     </div>
 
     <div class="flex flex-wrap justify-center px-12 pb-6">
-      <div class="w-full md:w-1/2 px:0 md:px-6 pb-4">
+      <div class="w-full md:w-2/3 lg:w-1/2 px:0 sm:px-6 pb-4">
         <div class="card mx-auto u--fadeInUp">
           <div class="card-body p-2 text-center">
             <div>

@@ -10,7 +10,7 @@
       <!--       <div class="content px-0 md:px-0 lg:px-0 2xl:px-24 ">
  -->
       <div
-        class="w-full tab:w-full lap:w-10/12 des:w-8/12 ult:w-7/12 bg-base-100"
+        class="w-full xs:w-full md:w-10/12 lgs:w-8/12 xxl:w-7/12 bg-base-100"
       >
         <Navbar></Navbar>
         <router-view></router-view>

@@ -47,7 +47,7 @@
     <div
       class="flex flex-wrap justify-center mb-8 w-full md:w-1/2 mx-auto text-ubyus-200 u--fadeInUp"
     >
-      <div class="w-full md:w-1/3 text-center">
+      <div class="w-full sm:w-1/3 text-center">
         <a
           href="https://www.linkedin.com/in/joao-rached-7b9a1281?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABFp6v0BeA07vaF99f80bRhWxamJRmAmFSE&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3B9bTX7rpxTlqk3%2FVJYhb6fA%3D%3D"
           target="_blank"
@@ -57,7 +57,7 @@
           <div class="text-center">João Rached</div>
         </a>
       </div>
-      <div class="w-full md:w-1/3 text-center">
+      <div class="w-full sm:w-1/3 text-center">
         <a
           href="https://www.linkedin.com/in/eduardo-beadle-4234b62a?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAYf9dsBfsF8bmEJEXGRbS0iQzksPNyb-Oc&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3B9bTX7rpxTlqk3%2FVJYhb6fA%3D%3D"
           target="_blank"
@@ -67,7 +67,7 @@
           <div class="text-center">Eduardo Beadle</div>
         </a>
       </div>
-      <div class="w-full md:w-1/3 text-center">
+      <div class="w-full sm:w-1/3 text-center">
         <a
           href="https://www.linkedin.com/in/nilton-junior-nj?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAABIwBcBkGslDvoosnv-reDjbdhGHMQ08x4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3B9bTX7rpxTlqk3%2FVJYhb6fA%3D%3D"
           target="_blank"

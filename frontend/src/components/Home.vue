@@ -3,15 +3,20 @@
     <section id="home" class="">
       <div>
         <div
-          class="flex border-y border-ubyus-200 flex-wrap mt-0 md:mt-12 justify-center md:justify-between mx-4 md:mx-8"
+          class="flex border-y my-auto border-ubyus-200 flex-wrap mt-0 sm:mt-12 justify-center sm:justify-between mx-4 sm:mx-8"
         >
-          <div class="w-full md:w-1/6">
-            <img src="/static/images/consultoria.png" class="u--fadeInLeft" />
+          <div class="w-full sm:w-1/4 md:w-1/6 my-2">
+            <img
+              src="/static/images/consultoria.png"
+              class="u--fadeInLeft my-auto"
+            />
           </div>
           <div
-            class="w-full md:w-auto py-6 text-left mx-auto align-middle my-auto"
+            class="w-full sm:w-auto py-6 text-left mx-auto align-middle my-auto"
           >
-            <h2 class="text-4xl prompt font-bold u--fadeInRight">
+            <h2
+              class="text-center text-base sm:text-lg md:text-1xl lg:text-2xl xl:text-4xl prompt font-bold u--fadeInRight"
+            >
               <span v-if="lang == 'portugues'">
                 Consultoria em Gestão e Estratégia de Negócios
               </span>
@@ -20,17 +25,17 @@
           </div>
         </div>
       </div>
-
-      <div class="flex flex-wrap mt-4 md:mt-16 mx-4 md:mx-8">
-        <div
-          class="w-full text-xl prompt font-bold tracking-wide u--fadeInLeft"
-        >
-          <span v-if="lang == 'portugues'">Nossa Atuação</span>
-          <span v-else>Our Expertise</span>
-        </div>
-      </div>
-
+      <!-- 
       <section id="atuacao">
+        <div class="flex flex-wrap mt-4 md:mt-28 mx-4 md:mx-8">
+          <div
+            class="w-full text-xl prompt font-bold tracking-wide u--fadeInLeft"
+          >
+            <span v-if="lang == 'portugues'">Nossa Atuação</span>
+            <span v-else>Our Expertise</span>
+          </div>
+        </div>
+
         <div class="px-4 md:px-8">
           <div
             class="flex flex-wrap md:py- justify-center md:border-y border-ubyus-200"
@@ -51,7 +56,7 @@
                       <span v-if="lang == 'portugues'"
                         >Fusões e Aquisições</span
                       >
-                      <span>Mergers and Acquisitions</span>
+                      <span v-else>Mergers and Acquisitions</span>
                     </p>
                   </div>
                 </div>
@@ -152,8 +157,141 @@
           </div>
         </div>
       </section>
+ -->
+      <section id="atuacao">
+        <div class="flex flex-wrap mt-4 sm:mt-20 mx-4 sm:mx-8">
+          <div
+            class="w-full text-xl prompt font-bold tracking-wide u--fadeInLeft"
+          >
+            <span v-if="lang == 'portugues'">Nossa Atuação</span>
+            <span v-else>Our Expertise</span>
+          </div>
+        </div>
 
-      <section id="aubyus" class="my-14">
+        <div
+          class="flex flex-wrap sm:py-24 justify-center sm:border-y border-ubyus-200 px-4"
+        >
+          <div
+            class="card w-full sm:w-1/3 rounded-lg px-1 md:px-4 my-4 grayscale hover:grayscale-0 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
+            @click="$router.push({ path: 'fusoeseaquisicoes' })"
+          >
+            <div
+              class="card-body bg-white shadow-xl border-t border-gray-200 p-2 sm:p-4 cursor-pointer"
+            >
+              <div class="mb-2">
+                <img
+                  src="/static/images/fusoes.png"
+                  class="u--fadeInLeft object-center object-cover w-2/3 mx-auto"
+                />
+              </div>
+              <div class="w-full my-auto text-center">
+                <p class="font-bold my-2">
+                  <span v-if="lang == 'portugues'">Fusões e Aquisições</span>
+                  <span v-else>Mergers and Acquisitions</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card w-full sm:w-1/3 rounded-lg px-1 md:px-4 my-4 grayscale hover:grayscale-0 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
+            @click="$router.push({ path: 'estruturacao' })"
+          >
+            <div
+              class="card-body bg-white shadow-xl border-t border-gray-200 p-2 sm:p-4 cursor-pointer"
+            >
+              <div class="mb-2">
+                <img
+                  src="/static/images/estruturacao.png"
+                  class="u--fadeInLeft object-center object-cover w-2/3 mx-auto"
+                />
+              </div>
+              <div class="w-full my-auto text-center">
+                <p class="font-bold my-2">
+                  <span v-if="lang == 'portugues'">
+                    Estruturação e Estratégia de Negócios</span
+                  >
+                  <span v-else>Business Structuring and Strategy</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card w-full sm:w-1/3 rounded-lg px-1 md:px-4 my-4 grayscale hover:grayscale-0 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
+            @click="$router.push({ path: 'sucessao' })"
+          >
+            <div
+              class="card-body bg-white shadow-xl border-t border-gray-200 p-2 sm:p-4 cursor-pointer"
+            >
+              <div class="mb-2">
+                <img
+                  src="/static/images/sucessao.png"
+                  class="u--fadeInLeft object-center object-cover w-2/3 mx-auto"
+                />
+              </div>
+              <div class="w-full my-auto text-center">
+                <p class="font-bold my-2">
+                  <span v-if="lang == 'portugues'"
+                    >Sucessão e Governança Familiar</span
+                  >
+
+                  <span v-else>Succession and Family Governance</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card w-full sm:w-1/3 rounded-lg px-1 md:px-4 my-4 grayscale hover:grayscale-0 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
+            @click="$router.push({ path: 'gestao' })"
+          >
+            <div
+              class="card-body bg-white shadow-xl border-t border-gray-200 p-2 sm:p-4 cursor-pointer"
+            >
+              <div class="mb-2">
+                <img
+                  src="/static/images/gestao.png"
+                  class="u--fadeInLeft object-center object-cover w-2/3 mx-auto"
+                />
+              </div>
+              <div class="w-full my-auto text-center">
+                <p class="font-bold my-2">
+                  <span v-if="lang == 'portugues'">Gestão de Pessoas</span>
+                  <span v-else>People Management</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card w-full sm:w-1/3 rounded-lg px-1 md:px-4 my-4 grayscale hover:grayscale-0 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
+            @click="$router.push({ path: 'solucoes' })"
+          >
+            <div
+              class="card-body bg-white shadow-xl border-t border-gray-200 p-2 sm:p-4 cursor-pointer"
+            >
+              <div class="mb-2">
+                <img
+                  src="/static/images/solucoes.png"
+                  class="u--fadeInLeft object-center object-cover w-2/3 mx-auto"
+                />
+              </div>
+              <div class="w-full my-auto text-center">
+                <p class="font-bold my-2">
+                  <span v-if="lang == 'portugues'"
+                    >Soluções em Serviços Financeiros e Consórcio</span
+                  >
+                  <span v-else
+                    >Financial Services and Consortium Solutions</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aubyus" class="my-24">
         <div
           class="border-ubyus-200 bg-base flex flex-wrap justify-center md:justify-between md:px-2"
         >
