@@ -4,7 +4,7 @@ import { toRefs } from "vue";
 
 const instance = axios.create({
   // baseURL: "https://ubyusadvisors.com",
-  baseURL: "https://ubyus.alvitre.com.br",
+  baseURL: "https://ubyusadvisors.com",
 });
 
 export const useEmail = () => {
