@@ -1,4 +1,9 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {
+  createMemoryHistory,
+  createRouter,
+  createWebHashHistory,
+  createWebHistory,
+} from "vue-router";
 import Home from "./components/Home.vue";
 import FusoesEAquisicoes from "./components/FusoesEAquisicoes.vue";
 import Estruturacao from "./components/Estruturacao.vue";
@@ -9,7 +14,7 @@ import Contato from "./components/Contato.vue";
 import Socios from "./components/Socios.vue";
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: "/",
