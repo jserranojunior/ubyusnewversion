@@ -33,7 +33,7 @@
       state.servicos = [
         "Mapping of Profiles and Objectives",
         "Governance Structure",
-        "Sucession Plan",
+        "Succession Plan",
       ];
     }
   }

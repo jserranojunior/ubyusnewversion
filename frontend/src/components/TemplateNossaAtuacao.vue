@@ -57,7 +57,7 @@
             <div class="px-2 my-auto w-2/3">
               <p class="u--fadeInUp text-sm font-bold">
                 <span v-if="lang == 'portugues'">Fusões e Aquisições</span>
-                <span>Mergers and Acquisitions</span>s
+                <span>Mergers and Acquisitions</span>
               </p>
             </div>
           </div>

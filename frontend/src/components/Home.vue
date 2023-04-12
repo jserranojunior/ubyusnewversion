@@ -351,8 +351,8 @@
                 <span v-else>
                   Our purpose is to form COLLABORATIVE logic in the development
                   of businesses, seeking DIVERSITY in the intelligence and
-                  resources applied, ensuring continuous learning and the
-                  constant INNOVATION of our solutions.
+                  resources applied, ensuring continuous learning the constant
+                  INNOVATION of our solutions.
                 </span>
                 <br /><br />
               </p>

@@ -37,9 +37,6 @@ header('Content-Type: application/json');
   $message = $_REQUEST["message"];
     $phone = $_REQUEST["phone"];
 
-
-
-
 $mail->isSMTP();                                      
 $mail->Host = 'smtp.gmail.com';  
 $mail->SMTPAuth = true;                               
@@ -48,10 +45,10 @@ $mail->Password = 'kllyoieiorrmyzif';
 $mail->SMTPSecure = 'ssl'; 
 $mail->Port = 465;  
 
-/* $mail->From = 'ubyusadvisors@gmail.com';
-$mail->addAddress('contato@ubyusadvisors.com'); */
- $mail->From = 'alvitreempresa@gmail.com';
- $mail->addAddress('jorgeserranojunior@gmail.com');
+ $mail->From = 'ubyusadvisors@gmail.com';
+$mail->addAddress('contato@ubyusadvisors.com'); 
+/*  $mail->From = 'alvitreempresa@gmail.com';
+ $mail->addAddress('jorgeserranojunior@gmail.com'); */
 $mail->FromName = 'Ubyus Contato';
 
 $mail->isHTML(true); 
