@@ -57,6 +57,15 @@ const router = createRouter({
       component: Socios,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition; // Retorna à posição anterior
+    } else if (to.hash) {
+      return { el: to.hash, behavior: "smooth" }; // Rola até o elemento com o ID correspondente
+    } else {
+      return { top: 0 }; // Volta para o topo
+    }
+  },
 });
 
 export default router;

@@ -50,16 +50,36 @@
           <li><a class="navbar-link" href="/">Home</a></li>
 
           <li>
-            <a v-if="lang == 'portugues'" class="navbar-link" href="/#aubyus"
+            <a
+              v-if="lang == 'portugues'"
+              class="navbar-link"
+              href="#aubyus"
+              @click.prevent="scrollToSection('aubyus')"
               >A UbyUS</a
             >
-            <a v-else class="navbar-link" href="/#aubyus">The UbyUS</a>
+            <a
+              v-else
+              class="navbar-link"
+              href="#aubyus"
+              @click.prevent="scrollToSection('aubyus')"
+              >The UbyUS</a
+            >
           </li>
           <li>
-            <a v-if="lang == 'portugues'" class="navbar-link" href="/#atuacao"
+            <a
+              v-if="lang == 'portugues'"
+              class="navbar-link"
+              href="#atuacao"
+              @click.prevent="scrollToSection('atuacao')"
               >Nossa Atuação</a
             >
-            <a v-else class="navbar-link" href="/#atuacao">Our Expertise</a>
+            <a
+              v-else
+              class="navbar-link"
+              href="#atuacao"
+              @click.prevent="scrollToSection('atuacao')"
+              >Our Expertise</a
+            >
           </li>
           <li>
             <router-link
@@ -81,16 +101,36 @@
         <li><a class="navbar-link" href="/">Home</a></li>
 
         <li>
-          <a v-if="lang == 'portugues'" class="navbar-link" href="/#aubyus"
-            >A UbyUS</a
+          <a
+            v-if="lang == 'portugues'"
+            class="navbar-link"
+            href="/#aubyus"
+            @click.prevent="scrollToSection('aubyus')"
+            >A UbyUSr</a
           >
-          <a v-else class="navbar-link" href="/#aubyus">The UbyUS</a>
+          <a
+            v-else
+            class="navbar-link"
+            href="/#aubyus"
+            @click.prevent="scrollToSection('aubyus')"
+            >The UbyUS</a
+          >
         </li>
         <li>
-          <a v-if="lang == 'portugues'" class="navbar-link" href="/#atuacao"
+          <a
+            v-if="lang == 'portugues'"
+            class="navbar-link"
+            href="/#atuacao"
+            @click.prevent="scrollToSection('atuacao')"
             >Nossa Atuação</a
           >
-          <a v-else class="navbar-link" href="/#atuacao">Our Expertise</a>
+          <a
+            v-else
+            class="navbar-link"
+            href="/#atuacao"
+            @click.prevent="scrollToSection('atuacao')"
+            >Our Expertise</a
+          >
         </li>
         <li>
           <router-link
@@ -109,14 +149,37 @@
   </div>
 </template>
 <script setup lang="ts">
-  import LogoArea from "./LogoArea.vue";
-  import { useLang } from "../provides/use/useLang";
-  import { onBeforeMount } from "vue";
+import LogoArea from "./LogoArea.vue";
+import { useLang } from "../provides/use/useLang";
+import { onBeforeMount } from "vue";
+import { useRouter, useRoute } from "vue-router";
+import { nextTick } from "vue";
 
-  const { lang, changeLang, verifyLangEnglish } = useLang();
-
-  onBeforeMount(() => {
-    verifyLangEnglish();
-    console.log(lang.value);
-  });
+const { lang, changeLang, verifyLangEnglish } = useLang();
+const router = useRouter();
+const route = useRoute();
+function scrollToSection(sectionId: any) {
+  if (route.path !== "/") {
+    // Redireciona para a página inicial se não estiver lá
+    router.push("/").then(() => {
+      // Aguarda o redirecionamento e dá tempo para o DOM renderizar
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300); // Ajuste o tempo conforme necessário
+    });
+  } else {
+    // Rola diretamente se já estiver na página inicial
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}
+onBeforeMount(() => {
+  verifyLangEnglish();
+  console.log(lang.value);
+});
 </script>
