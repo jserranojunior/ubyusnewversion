@@ -106,7 +106,7 @@
             class="navbar-link"
             href="/#aubyus"
             @click.prevent="scrollToSection('aubyus')"
-            >A UbyUSr</a
+            >A UbyUS</a
           >
           <a
             v-else
