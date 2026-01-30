@@ -4,9 +4,9 @@
   <footer class="bg-ubyus-100 text-base-100 p-8 mt-8 u--fadeInLeft">
     <div class="flex flex-wrap justify-between text-center">
       <div class="w-full md:w-1/3 mt-2 md mt-0">
-        Avenida Dr. Chucri Zaidan, 1550 – cj. 1508 <br />
-        Capital Corporate Office – São Paulo / SP <br />
-        CEP: 04711-130
+        Avenida Andrômeda, 885 <br />
+        Brascan Century Office - Salas 918 e 919 <br />
+        Alphaville – Barueri / SP - CEP 06473-000
       </div>
       <div class="w-full md:w-1/3 mt-2 md mt-0">
         contato@ubyusadvisors.com <br />
